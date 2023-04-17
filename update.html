@@ -1,0 +1,27 @@
+
+            <form  method="POST" action="/updatephone">
+            {% for row in data %}
+              Name
+
+                 
+                    <input name="name" value="{{ row[1] }}" type="text" >
+                 Address
+
+                    <input name="address" value="{{ row[2] }}" type="text" >
+                 
+                Phone Number
+
+                
+                    <input name="phone" value="{{ row[3] }}" type="text" >
+                 
+             
+            <a href="/"><input type="button" value="Cancel"></button></a>
+                <input name="update" type="submit" value="Update">
+           
+             {% endfor %}
+            </form>
+			
+			
+			
+			
+       

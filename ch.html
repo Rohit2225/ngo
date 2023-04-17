@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NGO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0 ;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://localhost:8181/">Logo</a>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="active"><a href="/ngo/">Home</a></li>
+<li><a href="/ngo/listevents.php">Events</a></li>
+<li><a href="/ngo/listdonator.php">Donators</a></li>
+<li><a href="/ngo/contact.php">Contact Us</a></li>
+<li><a href="/ngo/aboutus.php">About Us</a></li>
+<li><a href="/ngo/donator.php">Donate</a></li>
+
+</ul>
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign UP</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+	  <img src="images/one.jpg" alt="oops info solutions pvt ltd">
+        <div class="carousel-caption">
+          <h3>Donate $</h3>
+          <p>Money Money.</p>
+        </div>      
+      </div>
+		<div class="item">
+        <img src="images/two.jpg" alt="oops info solutions pvt ltd">
+        <div class="carousel-caption">
+          <h3>Donate $</h3>
+          <p>Money Money.</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/thr.jpg" alt="oops info solutions pvt ltd">
+        <div class="carousel-caption">
+          <h3>Donate $</h3>
+          <p>Money Money.</p>
+        </div>      
+      </div>
+	  
+	   <div class="item">
+        <img src="images/four.jpg" alt="oops info solutions pvt ltd">
+        <div class="carousel-caption">
+          <h3>Donate $</h3>
+          <p>Money Money.</p>
+        </div>      
+      </div>
+	  
+	  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+
+  
+<div class="container text-center">    
+  <h3>What We Have</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="images/social.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p><b>Social Education</b></p>
+    </div>
+    <div class="col-sm-4"> 
+    <img src="images/self.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p><b>Self Care</b></p>    
+    </div>
+      <div class="col-sm-4"> 
+    <img src="images/sustain.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p><b>Sustain</b></p>    
+    </div>
+  </div>
+</div><br>
+<hr>
+
+
+<div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-piggy-bank d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Make Donation</h3>
+            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-blood d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Medical Health</h3>
+            <p>Praesentium magnam pariatur quae necessitatibus eligendi voluptate ducimus.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-food d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Food for the Poor</h3>
+            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-donation d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Help &amp; Love</h3>
+            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-dollar d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Give To The Needy</h3>
+            <p>Praesentium magnam pariatur quae necessitatibus eligendi voluptate ducimus.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-unity d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Volunteer</h3>
+            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
+          </div>
+
+        </div>
+      </div>
+	  <hr>
+ <section class="spacer">
+        <div class="container">
+          <h3 class="heading" style="text-transform:uppercase;margin: 40px 15px 10px 15px;">
+            STORIES OF CHANGE EDUCATION
+          </h3>
+           
+          <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-1">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/lavanya.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>Lavanya</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>“I want to be the Prime Minister.”</em></p>
+                <p>It is hard to miss the sparkle in Lavanya’s eyes when she says this. Full of mischief and fun now, Lavanya did not have a very happy childhood initially. Abandoned by her father at birth, Lavanya lost her mother too, in an accident seven years ago. But the little girl...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-1" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Lavanya</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/lavanya-1.jpg" alt="Shivi" hspace="8" align="left">
+                    <p><strong><em>“I want to be the Prime Minister.”</em></strong></p>
+                   <p>It is hard to miss the sparkle in Lavanya’s eyes when she says this. Full of mischief and fun now, Lavanya did not have a very happy childhood initially. Abandoned by her father at birth, Lavanya lost her mother too, in an accident seven years ago. But the little girl was lucky to get a second mother. Her maternal aunt Padma adopted her and started bringing her up like her own daughter. Padma works a s a contruction laborer and has to struggle everyday to feed both her daughters Lavanya and Shobha but she never gets tired because she has big dreams for both of them.</p>
+                   
+                   <p>Lavanya studies in the 4th standard along with Shobha at a Mission education center in Hyderabad. She likes to draw and dance and so does her sister. Lavanya wants to grow up to be a teacher and teach children who do not have the means to pursue an education.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-2">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/roshan.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>Roshan</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                  <p><em>"I could not sit for my exams in the 6th standard, I thought I will never be able to go to school again."</em></p>
+                <p>Roshan is currently a student of class VII at a Mission Education Center in Odisha. His father who used to work as a daily wage earner passed away when Roshan was in the 6th standard. Before joining...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+         <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-2" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Roshan</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/roshan-1.jpg" alt="roshan-1" hspace="8" align="left">
+                    <p><strong><em>"I could not sit for my exams in the 6th standard, I thought I will never be able to go to school again."</em></strong></p>
+                   
+                   <p>Roshan is currently a student of class VII at a Mission Education Center in Odisha. His father who used to work as a daily wage earner passed away when Roshan was in the 6th standard. Before joining in the Mission Education center he along with his mother had to go through very hard times when his father expired and his mother did not have any money to pay the school fees and he had to drop one year. When identified by a project coordinator of the Mission Education center Roshan was a boy with little hope.</p>
+                   <p>Soon after joining the center Roshan began to improve in studies, he works harder and never misses a class. He likes to make new friends and read story books. His mother now works to earn for the family and Roshan hopes that someday he will be successful and work of all those children who have to suffer like he did.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+         <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-3">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/anshu-1.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>Anshu Garori</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>"I could not sit for my exams in the 6th standard, I thought I will never be able to go to school again."</em></p>
+                <p>“I can’t forget the smile on her lips and tears on my mother’s eyes when the teachers told her I stood second in the class. I want to come first this year and make her only smile, no tears.”</p>
+                <p>When Anshu started...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-3" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Anshu Garori</h3>
+                <h4 class="modal-title" id="project-4-label">Chhattisgarh</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/anshu.jpg" alt="Gangadhar" hspace="8" align="left">
+                    <p><strong><em>"I could not sit for my exams in the 6th standard, I thought I will never be able to go to school again."</em></strong></p>
+                    
+                    <p>“I can’t forget the smile on her lips and tears on my mother’s eyes when the teachers told her I stood second in the class. I want to come first this year and make her only smile, no tears.”</p>
+                    
+                   <p>When Anshu started to go to the Mission Education center and stood second in her class her family’s joys knew no bounds. The stories of successful people she used to tell Anshu felt like coming true when Anshu began doing well at school. Anshu and her parents are waiting for more good news to pour in when Anshu will grow up to be successful and stand on her own feet.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-4">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/nahid.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>Nahid</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>“I used to miss school earlier, but then Miss Preeti came and told ammi to send me to a free school, so I come here now.”</em></p>
+                <p>8 year old Nahid excitedly gets ready for school, they have art and craft periods at school today and storytelling too. Nothing can dampen the energy of this little girl.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="modal fade" id="case-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Nahid</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/nahid-1.jpg" alt="sonu" hspace="8" align="left">
+                    <p><strong><em>“I used to miss school earlier, but then Miss Preeti came and told ammi to send me to a free school, so I come here now.”</em></strong></p>
+                    
+                    <p>8 year old Nahid excitedly gets ready for school, they have art and craft periods at school today and storytelling too. Nothing can dampen the energy of this little girl. Her father who worked as a tailor in a factory nearby lost his hand in an accident which led him to lose his job. Things began to change from then on, Nahid who earlier used to go to a different school had to drop out and so did her brother Adil who began working in a shop to support the family.</p>
+                    <p>Nahid was identified by a coordinator from Mission Education who convinced her parents to send her to the center in Ghaziabad. The family is happy that she gets lunch at school and Nahid for the love of her Adil saves kheer form lunch. The family still struggles but Nahid knows that she can make everything go away by working hard at school.</p>                   
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-5">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/story-of-change-me.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>PRADIP</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>“We have a small boat now. But when I grow up, I will buy a big ship, and ask amma and appa to rest.”</em></p>
+                <p>Pradip’s parents make a living through boat riding in a small village of Khammam, Telangana, barely earning Rs. 3000 a month. As he grew up, Pradip too started accompanying his parents on their daily rides and would...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-5" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Pradip</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                 <div class="col-md-12">
+                 <img src="./smile_files/pradip.jpg" alt="pradip" hspace="8" align="left">
+                 
+                  <p><strong><em>“We have a small boat now. But when I grow up, I will buy a big ship, and ask amma and appa to rest.”</em></strong></p>
+                   <p> Pradip’s parents make a living through boat riding in a small village of Khammam, Telangana, barely earning Rs. 3000 a month. As he grew up, Pradip too started accompanying his parents on their daily rides and would do odd jobs for people, earning a few extra rupees.</p>
+                   
+                   <p> It took nearly three years of counseling and countless door to door visits by teachers from Mission Education at Telengana to convince Pradip’s parents to send him to school. They had not wanted to part with the little additional income that he had started bringing in. But in the end, when Pradip insisted, they could not say no to their son.</p>
+                   
+                   <p> Now when Pradip goes with his parents on the boat rides and they hear him talking in English with the tourists, they can’t stop smiling. He has also started teaching some English words to his parents to help them deal better with the tourists.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-6">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/roohi.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>ROOHI</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>"I want to help my father and mother because my father is always sick."</em></p>
+                <p>The story of Roohi is a sad one. Her father met with an accident some years back and is totally bed ridden and her mother works in the nearby households to earn money but whatever she earns half of it is spent on the medicines her father needs.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-6" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Roohi</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/roohi-2.jpg" alt="Roohi" hspace="8" align="left">
+                    <p><strong><em>"I want to help my father and mother because my father is always sick."</em></strong></p>
+                   
+                   <p> The story of Roohi is a sad one. Her father met with an accident some years back and is totally bed ridden and her mother works in the nearby households to earn money but whatever she earns half of it is spent on the medicines her father needs.</p>
+                   <p> It was Smile Foundation’s Mission Education program that was able to rescue Roohi from her poor conditions and give a direction to her life. She now studies in class 4 in the Mission Education Centre in Maxvision, Gurgaon. Her dream is to become a teacher and Mission Education is helping her realize her dream.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-7">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/purnima.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>PURNIMA</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>"Both my brothers and I go to school together now and also have our meals together now. I have my own happy stories now."</em></p>
+                <p>Earlier Purnima, her two brothers Som and Shubh and her grandparents, who these three children stay with, lead a life of despair and poverty. Her mother and father worked in Delhi and used to send some money every month.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-7" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Purnima</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/purnima-2.jpg" alt="purnima" hspace="8" align="left">
+                    <p><strong><em>"Both my brothers and I go to school together now and also have our meals together now. I have my own happy stories now."</em></strong></p>
+                    
+                    <p>Earlier Purnima, her two brothers Som and Shubh and her grandparents, who these three children stay with, lead a life of despair and poverty. Her mother and father worked in Delhi and used to send some money every month. She usually used to take care of the household chores and her brothers. Seeing all her friends go to school and talk about it she also longed to go to school someday.</p>
+                    
+                   <p> It was through her friends that Mission Education Program of Smile Foundation came to know about Purnima and her brothers. After much discussions and talks with her grandparents Purnima was finally admitted at the centre. She currently studies in class 6, her brother Shubh is in class 3 and another of her brother Som will come to class 1. Very soon their hard work and dreams are going to bear fruit and they are going to be successful.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-8">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/ritu.jpg" class="img-responsive">
+                <div class="head">
+                   <h4>RITU</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                 <p><em>"I study in a school and I like being here a lot"</em></p>
+                <p>These words bring so much encouragement for a society such as ours where school dropouts and illiteracy have increased more than ever. Ritu studies in class 3 in the Smile Foundation’s Mission Education centre in Gurgaon. Her father abandoned her mother, her and his son...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+         <div class="modal fade" id="case-8" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Ritu</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/ritu-2.jpg" alt="Ritu" hspace="8" align="left">
+                    <p><strong><em>"I study in a school and I like being here a lot."</em></strong>
+                      <br><br>
+                      These words bring so much encouragement for a society such as ours where school dropouts and illiteracy have increased more than ever. Ritu studies in class 3 in the Smile Foundation’s Mission Education centre in Gurgaon. Her father abandoned her mother, her and his son two years ago and to earn to eat she was sent to work as a domestic help in a house while her mother worked in a factory. 
+                      <br><br>
+                      Upon much convincing by the teachers of the Mission Education program her brother was sent to school but not her. It took another round of counseling g for her mother to finally agree to send Ritu to school. She now attends school every day and enjoys learning and playing in school.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-9">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/gauri-&amp;-rupali.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>GAURI AND RUPALI</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>"We both want to work hard and become teachers and help other children like us read and write."</em></p>
+                <p>This dream of Gauri and Rupali, both sisters is very soon going to come true as both of them study hard at Smile Foundation’s Mission Education centre in BHT (KALYAN), Mumbai, Maharashtra. Both of them earlier used to take care of the household...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-9" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Gauri &amp; Rupali</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/gauri-&amp;-rupali-2.jpg" alt="gauri-&amp;-rupali" hspace="8" align="left">
+                    <p><strong><em>"We both want to work hard and become teachers and help other children like us read and write."</em></strong>
+                      <br><br>
+                      This dream of Gauri and Rupali, both sisters is very soon going to come true as both of them study hard at Smile Foundation’s Mission Education centre in BHT (KALYAN), Mumbai, Maharashtra. Both of them earlier used to take care of the household chores as their parents were off to work at the brick kiln, as daily wage earners. 
+                      <br><br>
+                      Encouraged by the teachers of the Mission Education program the parents started to send the children to the centre. Both willingly attend all the classes and the parents also do not miss any of the parent-teacher meetings and are keeping a close track of their children’s academics. Like Gauri and Rupali 250 other students are also receiving quality education in the same centre.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        </div><!--container-->
+      </section>
+      
+<footer class="container-fluid text-center">
+  <p>Donate For Poor Peoples</p>
+ 
+</footer>
+
+</body>
+</html>
+
+
+
+
+			  
+			  

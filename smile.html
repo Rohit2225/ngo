@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://www.smilefoundationindia.org/mission-education/story_of_change.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+  
+  <!--Start of Zopim Live Chat Script-->
+<script src="./smile_files/512669612246459" async=""></script><script src="./smile_files/sdk.js.download" async="" crossorigin="anonymous"></script><script async="" src="./smile_files/default" charset="UTF-8" crossorigin="*"></script><script id="facebook-jssdk" src="./smile_files/sdk.js(1).download"></script><script async="" src="./smile_files/fbevents.js.download"></script><script async="" charset="utf-8" src="./smile_files/saved_resource" type="text/javascript"></script><script type="text/javascript">
+
+  <!--
+  if (screen.width <= 800) {
+    window.location = "http://www.smilefoundationindia.org/me-mobile/";
+  }
+  //-->
+  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+  $.src="//v2.zopim.com/?4D5CJffTA4Lpzml6j9DWUneO1yX3u9ky";z.t=+new Date;$.
+  type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>smile</title>
+    <script type="text/javascript" src="./smile_files/jquery-1.9.1.min.js.download"></script>
+    <link href="./smile_files/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/custom.css" rel="stylesheet"> -->
+     <link href="./smile_files/my-edit.css" rel="stylesheet">
+    <link href="./smile_files/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="./smile_files/jssor.js.download"></script>
+    <script type="text/javascript" src="./smile_files/jssor.slider.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./smile_files/education.css">
+    <style type="text/css">
+       	input.watermark { color: #999; }
+    	  input {
+      		padding:4px;
+      		text-indent: 5px;
+      		width:200px;
+      		font-size:14px;
+      	}
+
+        .amt {
+        padding : 0px !important;
+        display : inline !important;
+        }
+
+    </style>
+
+      <script language="Javascript">
+          /**
+           * DHTML phone number validation script. Courtesy of SmartWebby.com (http://www.smartwebby.com/dhtml/)
+           */
+
+          // Declaring required variables 
+          var digits = "0123456789";
+          // non-digit characters which are allowed in phone numbers
+          var phoneNumberDelimiters = "()- ";
+          // characters which are allowed in international phone numbers
+          // (a leading + is OK)
+          var validWorldPhoneChars = phoneNumberDelimiters + "+";
+          // Minimum no of digits in an international phone no.
+          var minDigitsInIPhoneNumber = 8;
+
+          function isInteger(s) {
+              var i;
+              for (i = 0; i < s.length; i++) {
+                  // Check that current character is number.
+                  var c = s.charAt(i);
+                  if (((c < "0") || (c > "9"))) return false;
+              }
+              // All characters are numbers.
+              return true;
+          }
+          function trim(s) {
+              var i;
+              var returnString = "";
+              // Search through string's characters one by one.
+              // If character is not a whitespace, append to returnString.
+              for (i = 0; i < s.length; i++) {
+                  // Check that current character isn't whitespace.
+                  var c = s.charAt(i);
+                  if (c != " ") returnString += c;
+              }
+              return returnString;
+          }
+          function stripCharsInBag(s, bag) {
+              var i;
+              var returnString = "";
+              // Search through string's characters one by one.
+              // If character is not in bag, append to returnString.
+              for (i = 0; i < s.length; i++) {
+                  // Check that current character isn't whitespace.
+                  var c = s.charAt(i);
+                  if (bag.indexOf(c) == -1) returnString += c;
+              }
+              return returnString;
+          }
+
+          function checkInternationalPhone(strPhone) {
+              var bracket = 3
+              strPhone = trim(strPhone)
+              if (strPhone.indexOf("+") > 1) return false
+              if (strPhone.indexOf("-") != -1) bracket = bracket + 1
+              if (strPhone.indexOf("(") != -1 && strPhone.indexOf("(") > bracket) return false
+              var brchr = strPhone.indexOf("(")
+              if (strPhone.indexOf("(") != -1 && strPhone.charAt(brchr + 2) != ")") return false
+              if (strPhone.indexOf("(") == -1 && strPhone.indexOf(")") != -1) return false
+              s = stripCharsInBag(strPhone, validWorldPhoneChars);
+              return (isInteger(s) && s.length >= minDigitsInIPhoneNumber);
+          }
+
+          function ValidateForm() {
+             
+              var Phone = document.frmSample.txtphone;
+              
+              var name = document.frmSample.name;
+              var email = document.frmSample.email;
+              var agedd = document.frmSample.agedd;
+              var agemm = document.frmSample.agemm;
+              var ageyy = document.frmSample.ageyy;
+
+              
+              if (name.value == "Full Name") {
+                  alert('Please enter Name');
+                  return false;
+              }
+
+              if (email.value == "Email Address") {
+                  alert('Please enter Email');
+                  return false;
+              }
+              else if (email.value != "") {
+                  var pattern = /^[a-zA-Z]+[a-zA-Z0-9_\-.]+@[a-zA-Z]+\.(([a-zA-Z]{3})||([a-zA-Z]{2}.[a-zA-Z]{2}))$/;
+                  if (!pattern.test(email.value)) {
+                      alert('Please enter valid Email');
+                      return false;
+                  }
+              }
+
+
+              if  (Phone.value == "Phone Number") {
+                  alert("Please Enter your Phone Number")
+                  Phone.focus()
+                  return false
+              }
+              if (checkInternationalPhone(Phone.value) == false) {
+                  alert("Please Enter a Valid Phone Number")
+                  Phone.value = ""
+                  Phone.focus()
+                  return false
+              }
+
+             
+
+              if ($('input[name="ECSAmount"]:checked').length > 0) {
+                  $('#amount_Recurring').val("true");
+                  if ($('input[name="ECSAmount"]:checked').val() == "500") {
+                      $('#amount_advanced').val("500");
+                  }
+                  else
+                  {
+                      if ($('#ECSAmt').val() == '') {
+                          alert('Please Select Donation Amount');
+                          return false;
+                      }
+                      else
+                          $('#amount_advanced').val($('#ECSAmt').val());
+                  }
+                  
+              }
+              else if ($('#amount_advanced').val() == '') {
+                  alert('Please Select Donation Amount');
+                  return false;
+              }
+              else {
+                  if ($('#amount_advanced').val() == "0") {
+                      $('#amount_Recurring').val("false");
+                      $('#amount_advanced').val($('#customamount').val());
+                  }
+              }
+              
+              return true
+          }
+    </script>
+
+    <script type="text/javascript">
+          $(document).ready(function () {
+
+              var namewatermark = 'Full Name';
+              $('#example-name-input').val(namewatermark).addClass('watermark');
+              //if blur and no value inside, set watermark text and class again.
+              $('#example-name-input').blur(function () {
+                  if ($(this).val().length == 0) {
+                      $(this).val(namewatermark).addClass('watermark');
+                  }
+              });
+
+              //if focus and text is watermrk, set it to empty and remove the watermark class
+              $('#example-name-input').focus(function () {
+                  if ($(this).val() == namewatermark) {
+                      $(this).val('').removeClass('watermark');
+                  }
+              });
+
+
+
+              var emailwatermark = 'Email Address';
+              $('#example-email-input').val(emailwatermark).addClass('watermark');
+              //if blur and no value inside, set watermark text and class again.
+              $('#example-email-input').blur(function () {
+                  if ($(this).val().length == 0) {
+                      $(this).val(emailwatermark).addClass('watermark');
+                  }
+              });
+
+              //if focus and text is watermrk, set it to empty and remove the watermark class
+              $('#example-email-input').focus(function () {
+                  if ($(this).val() == emailwatermark) {
+                      $(this).val('').removeClass('watermark');
+                  }
+              });
+
+
+              var phonenowatermark = 'Phone Number';
+              $('#example-tel-input').val(phonenowatermark).addClass('watermark');
+              //if blur and no value inside, set watermark text and class again.
+              $('#example-tel-input').blur(function () {
+                  if ($(this).val().length == 0) {
+                      $(this).val(phonenowatermark).addClass('watermark');
+                  }
+              });
+
+              //if focus and text is watermrk, set it to empty and remove the watermark class
+              $('#example-tel-input').focus(function () {
+                  if ($(this).val() == phonenowatermark) {
+                      $(this).val('').removeClass('watermark');
+                  }
+              });
+
+
+
+
+              var panwatermark = 'Permanent Account Number';
+              $('#example-pan-input').val(panwatermark).addClass('watermark');
+              //if blur and no value inside, set watermark text and class again.
+              $('#example-pan-input').blur(function () {
+                  if ($(this).val().length == 0) {
+                      $(this).val(panwatermark).addClass('watermark');
+                  }
+              });
+
+              //if focus and text is watermrk, set it to empty and remove the watermark class
+              $('#example-pan-input').focus(function () {
+                  if ($(this).val() == panwatermark) {
+                      $(this).val('').removeClass('watermark');
+                  }
+              });
+
+
+
+
+              var addresswatermark = 'Address';
+              $('#example-address-input').val(addresswatermark).addClass('watermark');
+              //if blur and no value inside, set watermark text and class again.
+              $('#example-address-input').blur(function () {
+                  if ($(this).val().length == 0) {
+                      $(this).val(addresswatermark).addClass('watermark');
+                  }
+              });
+
+              //if focus and text is watermrk, set it to empty and remove the watermark class
+              $('#example-address-input').focus(function () {
+                  if ($(this).val() == addresswatermark) {
+                      $(this).val('').removeClass('watermark');
+                  }
+              });
+
+
+
+              $(".donation-btn").click(function () {
+                  var amt = $(this).attr("Id");
+                  $("#amount_advanced").val(amt);
+                  $('input[name="ECSAmount"]').attr("checked", false);
+                  $('#amount_Recurring').val("false");
+              });
+
+              
+
+
+          });
+
+          function setamount() {
+              $("#amount_advanced").val("0");
+          }
+
+    </script>
+    
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '512669612246459'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=512669612246459&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+  <style type="text/css">@keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}@-moz-keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}@-webkit-keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}#JrSKP4W-1588095287692{outline:none!important;visibility:visible!important;resize:none!important;box-shadow:none!important;overflow:visible!important;background:none!important;opacity:1!important;filter:alpha(opacity=100)!important;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity1)!important;-moz-opacity:1!important;-khtml-opacity:1!important;top:auto!important;right:10px!important;bottom:0px!important;left:auto!important;position:fixed!important;border:0!important;min-height:0!important;min-width:0!important;max-height:none!important;max-width:none!important;padding:0!important;margin:0!important;-moz-transition-property:none!important;-webkit-transition-property:none!important;-o-transition-property:none!important;transition-property:none!important;transform:none!important;-webkit-transform:none!important;-ms-transform:none!important;width:auto!important;height:auto!important;display:none!important;z-index:2000000000!important;background-color:transparent!important;cursor:auto!important;float:none!important;border-radius:unset!important;pointer-events:auto!important}#dh6NeFa-1588095287694.open{animation : tawkMaxOpen .25s ease!important;}</style><script type="text/javascript" src="./smile_files/w"></script><style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+  <body><div class="zopim" __jx__id="___$_72 ___$_72" data-test-id="ChatWidgetButton" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000002; width: 180px; height: 30px; right: 10px; bottom: 0px;"><iframe frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" src="./smile_files/saved_resource.html" data-test-id="ChatWidgetButton-iframe" title="Zendesk Chat widget button"></iframe></div><div class="zopim" __jx__id="___$_4 ___$_4" data-test-id="ChatWidgetWindow" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000001; right: 10px; bottom: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; display: none; width: 290px; height: 400px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;"><iframe frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" src="./smile_files/saved_resource(1).html" data-test-id="ChatWidgetWindow-iframe" title="Zendesk Chat widget window"></iframe></div>
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+  	<script>(function(d, s, id) {
+  	  var js, fjs = d.getElementsByTagName(s)[0];
+  	  if (d.getElementById(id)) return;
+  	  js = d.createElement(s); js.id = id;
+  	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=925997607512456";
+  	  fjs.parentNode.insertBefore(js, fjs);
+  		}(document, 'script', 'facebook-jssdk'));
+  	</script>
+    <div class="outer-area">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.smilefoundationindia.org/mission-education/index.html"><img src="./smile_files/logo.jpg"></a>
+          </div>
+          <div class="clearfix"></div>
+          <div id="navbar" class="navbar-collapse collapse pull-right">
+            <ul class="nav navbar-nav">
+              <li><a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#about">About</a></li>
+              <li><a href="https://www.smilefoundationindia.org/mission-education/index.html#donate-now">Donate Now</a></li>
+              <li><a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html">Stories of Change</a></li>
+              <li><a href="https://www.smilefoundationindia.org/mission-education/photo-gallery.html">Photo Gallery</a></li>
+              <li><a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#faq">FAQ</a></li>
+              <li style="padding-top: 6px;"> <img src="./smile_files/phone.png"> </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-->
+      </nav>
+      <div> 
+       <!--Education Start-->
+         
+      <section class="spacer">
+        <div class="container">
+          <h3 class="heading" style="text-transform:uppercase;margin: 40px 15px 10px 15px;">
+            STORIES OF CHANGE EDUCATION
+          </h3>
+           
+          <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-1">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/lavanya.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>Lavanya</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>“I want to be the Prime Minister.”</em></p>
+                <p>It is hard to miss the sparkle in Lavanya’s eyes when she says this. Full of mischief and fun now, Lavanya did not have a very happy childhood initially. Abandoned by her father at birth, Lavanya lost her mother too, in an accident seven years ago. But the little girl...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-1" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Lavanya</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/lavanya-1.jpg" alt="Shivi" hspace="8" align="left">
+                    <p><strong><em>“I want to be the Prime Minister.”</em></strong></p>
+                   <p>It is hard to miss the sparkle in Lavanya’s eyes when she says this. Full of mischief and fun now, Lavanya did not have a very happy childhood initially. Abandoned by her father at birth, Lavanya lost her mother too, in an accident seven years ago. But the little girl was lucky to get a second mother. Her maternal aunt Padma adopted her and started bringing her up like her own daughter. Padma works a s a contruction laborer and has to struggle everyday to feed both her daughters Lavanya and Shobha but she never gets tired because she has big dreams for both of them.</p>
+                   
+                   <p>Lavanya studies in the 4th standard along with Shobha at a Mission education center in Hyderabad. She likes to draw and dance and so does her sister. Lavanya wants to grow up to be a teacher and teach children who do not have the means to pursue an education.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-2">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/roshan.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>Roshan</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                  <p><em>"I could not sit for my exams in the 6th standard, I thought I will never be able to go to school again."</em></p>
+                <p>Roshan is currently a student of class VII at a Mission Education Center in Odisha. His father who used to work as a daily wage earner passed away when Roshan was in the 6th standard. Before joining...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+         <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-2" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Roshan</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/roshan-1.jpg" alt="roshan-1" hspace="8" align="left">
+                    <p><strong><em>"I could not sit for my exams in the 6th standard, I thought I will never be able to go to school again."</em></strong></p>
+                   
+                   <p>Roshan is currently a student of class VII at a Mission Education Center in Odisha. His father who used to work as a daily wage earner passed away when Roshan was in the 6th standard. Before joining in the Mission Education center he along with his mother had to go through very hard times when his father expired and his mother did not have any money to pay the school fees and he had to drop one year. When identified by a project coordinator of the Mission Education center Roshan was a boy with little hope.</p>
+                   <p>Soon after joining the center Roshan began to improve in studies, he works harder and never misses a class. He likes to make new friends and read story books. His mother now works to earn for the family and Roshan hopes that someday he will be successful and work of all those children who have to suffer like he did.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+         <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-3">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/anshu-1.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>Anshu Garori</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>"I could not sit for my exams in the 6th standard, I thought I will never be able to go to school again."</em></p>
+                <p>“I can’t forget the smile on her lips and tears on my mother’s eyes when the teachers told her I stood second in the class. I want to come first this year and make her only smile, no tears.”</p>
+                <p>When Anshu started...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+         
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-3" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Anshu Garori</h3>
+                <h4 class="modal-title" id="project-4-label">Chhattisgarh</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/anshu.jpg" alt="Gangadhar" hspace="8" align="left">
+                    <p><strong><em>"I could not sit for my exams in the 6th standard, I thought I will never be able to go to school again."</em></strong></p>
+                    
+                    <p>“I can’t forget the smile on her lips and tears on my mother’s eyes when the teachers told her I stood second in the class. I want to come first this year and make her only smile, no tears.”</p>
+                    
+                   <p>When Anshu started to go to the Mission Education center and stood second in her class her family’s joys knew no bounds. The stories of successful people she used to tell Anshu felt like coming true when Anshu began doing well at school. Anshu and her parents are waiting for more good news to pour in when Anshu will grow up to be successful and stand on her own feet.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-4">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/nahid.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>Nahid</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>“I used to miss school earlier, but then Miss Preeti came and told ammi to send me to a free school, so I come here now.”</em></p>
+                <p>8 year old Nahid excitedly gets ready for school, they have art and craft periods at school today and storytelling too. Nothing can dampen the energy of this little girl.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="modal fade" id="case-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Nahid</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/nahid-1.jpg" alt="sonu" hspace="8" align="left">
+                    <p><strong><em>“I used to miss school earlier, but then Miss Preeti came and told ammi to send me to a free school, so I come here now.”</em></strong></p>
+                    
+                    <p>8 year old Nahid excitedly gets ready for school, they have art and craft periods at school today and storytelling too. Nothing can dampen the energy of this little girl. Her father who worked as a tailor in a factory nearby lost his hand in an accident which led him to lose his job. Things began to change from then on, Nahid who earlier used to go to a different school had to drop out and so did her brother Adil who began working in a shop to support the family.</p>
+                    <p>Nahid was identified by a coordinator from Mission Education who convinced her parents to send her to the center in Ghaziabad. The family is happy that she gets lunch at school and Nahid for the love of her Adil saves kheer form lunch. The family still struggles but Nahid knows that she can make everything go away by working hard at school.</p>                   
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-5">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/story-of-change-me.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>PRADIP</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>“We have a small boat now. But when I grow up, I will buy a big ship, and ask amma and appa to rest.”</em></p>
+                <p>Pradip’s parents make a living through boat riding in a small village of Khammam, Telangana, barely earning Rs. 3000 a month. As he grew up, Pradip too started accompanying his parents on their daily rides and would...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-5" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Pradip</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                 <div class="col-md-12">
+                 <img src="./smile_files/pradip.jpg" alt="pradip" hspace="8" align="left">
+                 
+                  <p><strong><em>“We have a small boat now. But when I grow up, I will buy a big ship, and ask amma and appa to rest.”</em></strong></p>
+                   <p> Pradip’s parents make a living through boat riding in a small village of Khammam, Telangana, barely earning Rs. 3000 a month. As he grew up, Pradip too started accompanying his parents on their daily rides and would do odd jobs for people, earning a few extra rupees.</p>
+                   
+                   <p> It took nearly three years of counseling and countless door to door visits by teachers from Mission Education at Telengana to convince Pradip’s parents to send him to school. They had not wanted to part with the little additional income that he had started bringing in. But in the end, when Pradip insisted, they could not say no to their son.</p>
+                   
+                   <p> Now when Pradip goes with his parents on the boat rides and they hear him talking in English with the tourists, they can’t stop smiling. He has also started teaching some English words to his parents to help them deal better with the tourists.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-6">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/roohi.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>ROOHI</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>"I want to help my father and mother because my father is always sick."</em></p>
+                <p>The story of Roohi is a sad one. Her father met with an accident some years back and is totally bed ridden and her mother works in the nearby households to earn money but whatever she earns half of it is spent on the medicines her father needs.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-6" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Roohi</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/roohi-2.jpg" alt="Roohi" hspace="8" align="left">
+                    <p><strong><em>"I want to help my father and mother because my father is always sick."</em></strong></p>
+                   
+                   <p> The story of Roohi is a sad one. Her father met with an accident some years back and is totally bed ridden and her mother works in the nearby households to earn money but whatever she earns half of it is spent on the medicines her father needs.</p>
+                   <p> It was Smile Foundation’s Mission Education program that was able to rescue Roohi from her poor conditions and give a direction to her life. She now studies in class 4 in the Mission Education Centre in Maxvision, Gurgaon. Her dream is to become a teacher and Mission Education is helping her realize her dream.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-7">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/purnima.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>PURNIMA</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>"Both my brothers and I go to school together now and also have our meals together now. I have my own happy stories now."</em></p>
+                <p>Earlier Purnima, her two brothers Som and Shubh and her grandparents, who these three children stay with, lead a life of despair and poverty. Her mother and father worked in Delhi and used to send some money every month.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-7" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Purnima</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/purnima-2.jpg" alt="purnima" hspace="8" align="left">
+                    <p><strong><em>"Both my brothers and I go to school together now and also have our meals together now. I have my own happy stories now."</em></strong></p>
+                    
+                    <p>Earlier Purnima, her two brothers Som and Shubh and her grandparents, who these three children stay with, lead a life of despair and poverty. Her mother and father worked in Delhi and used to send some money every month. She usually used to take care of the household chores and her brothers. Seeing all her friends go to school and talk about it she also longed to go to school someday.</p>
+                    
+                   <p> It was through her friends that Mission Education Program of Smile Foundation came to know about Purnima and her brothers. After much discussions and talks with her grandparents Purnima was finally admitted at the centre. She currently studies in class 6, her brother Shubh is in class 3 and another of her brother Som will come to class 1. Very soon their hard work and dreams are going to bear fruit and they are going to be successful.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-8">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/ritu.jpg" class="img-responsive">
+                <div class="head">
+                   <h4>RITU</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                 <p><em>"I study in a school and I like being here a lot"</em></p>
+                <p>These words bring so much encouragement for a society such as ours where school dropouts and illiteracy have increased more than ever. Ritu studies in class 3 in the Smile Foundation’s Mission Education centre in Gurgaon. Her father abandoned her mother, her and his son...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+         <div class="modal fade" id="case-8" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Ritu</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/ritu-2.jpg" alt="Ritu" hspace="8" align="left">
+                    <p><strong><em>"I study in a school and I like being here a lot."</em></strong>
+                      <br><br>
+                      These words bring so much encouragement for a society such as ours where school dropouts and illiteracy have increased more than ever. Ritu studies in class 3 in the Smile Foundation’s Mission Education centre in Gurgaon. Her father abandoned her mother, her and his son two years ago and to earn to eat she was sent to work as a domestic help in a house while her mother worked in a factory. 
+                      <br><br>
+                      Upon much convincing by the teachers of the Mission Education program her brother was sent to school but not her. It took another round of counseling g for her mother to finally agree to send Ritu to school. She now attends school every day and enjoys learning and playing in school.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        <div class="col-md-4">
+          <a href="https://www.smilefoundationindia.org/mission-education/story_of_change.html#" data-toggle="modal" data-target="#case-9">
+            <div class="story-content">
+              <div class="story-images">
+                <img src="./smile_files/gauri-&amp;-rupali.jpg" class="img-responsive">
+                <div class="head">
+                  <h4>GAURI AND RUPALI</h4>
+                </div>
+              </div>
+              <div class="story-text">
+                <p><em>"We both want to work hard and become teachers and help other children like us read and write."</em></p>
+                <p>This dream of Gauri and Rupali, both sisters is very soon going to come true as both of them study hard at Smile Foundation’s Mission Education centre in BHT (KALYAN), Mumbai, Maharashtra. Both of them earlier used to take care of the household...</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Modal For pop-up for About Us Start here-->
+        <div class="modal fade" id="case-9" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="project-4-label">Gauri &amp; Rupali</h3>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                  <img src="./smile_files/gauri-&amp;-rupali-2.jpg" alt="gauri-&amp;-rupali" hspace="8" align="left">
+                    <p><strong><em>"We both want to work hard and become teachers and help other children like us read and write."</em></strong>
+                      <br><br>
+                      This dream of Gauri and Rupali, both sisters is very soon going to come true as both of them study hard at Smile Foundation’s Mission Education centre in BHT (KALYAN), Mumbai, Maharashtra. Both of them earlier used to take care of the household chores as their parents were off to work at the brick kiln, as daily wage earners. 
+                      <br><br>
+                      Encouraged by the teachers of the Mission Education program the parents started to send the children to the centre. Both willingly attend all the classes and the parents also do not miss any of the parent-teacher meetings and are keeping a close track of their children’s academics. Like Gauri and Rupali 250 other students are also receiving quality education in the same centre.</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-details2" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal For pop-up for About Us end here-->
+
+        </div><!--container-->
+      </section>
+      
+      <footer> 
+        <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
+          <div>
+            <img src="./smile_files/f-1.png" class="img-responsive">
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-md-6 ">
+            <div class="copyright pull-left">
+              © 2016 Smile Foundation India. All Rights Reserved
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-3">
+            <div class="text-center">
+              
+              <ul class="social-links">
+                <span style="font-size:12px">Stay in Touch</span>
+                <li><a href="https://www.facebook.com/smilefoundationindia.org"><img src="./smile_files/facebook.png" class="img-responsive"></a></li>
+                <li><a href="https://twitter.com/smilefoundation"><img src="./smile_files/twitter.png" class="img-responsive"></a></li>
+                <li><a href="https://www.youtube.com/user/tubeforchange"><img src="./smile_files/you-tube.png" class="img-responsive"></a></li>
+                <li><a href="http://www.smilefoundationindia.org/blog/"><img src="./smile_files/blog.png" class="img-responsive"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer> 
+    </div>
+
+
+  	<div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Spread the word</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div>
+                <p class="text-center">Share this page with your friends and spread the smiles further! Use 
+                <br></p>
+                <p class="text-center"><b>#MyMissionEducation</b></p>
+               
+                  <div class="text-center" id="share-buttons">
+                    <!-- Facebook -->
+                    <a href="http://www.facebook.com/sharer.php?u=http://www.smilefoundationindia.org/me/index.html" target="_blank">
+                        <img src="./smile_files/fb-icon.png" alt="Facebook">
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/share?url=http://www.smilefoundationindia.org/me/index.html" target="_blank">
+                        <img src="./smile_files/twitter_icon.png" alt="Twitter">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="myModal-1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Volunteer</h4>
+          </div>
+          <div class="modal-body">
+            <p>Every action counts! If you would like to lend your support by volunteering, please drop a mail to <b><a href="mailto:debby.rai@smilefoundationindia.org?Subject=Hello%20again" target="_top">debby.rai@smilefoundationindia.org</a></b></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div id="myModal-2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">For Corporate Queries</h4>
+          </div>
+          <div class="modal-body">
+            <p>Looking for extending some CSR support, engaging your employees towards the cause and spreading hundreds of smiles along the way? Please write to <b><a href="mailto:cp@smilefoundationindia.org?Subject=Hello%20again" target="_top">cp@smilefoundationindia.org</a></b></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="faq" class="modal fade " role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Frequently Asked Questions</h4>
+          </div>
+          <div class="modal-body">
+            <h4>1. What is the education scenario in India, presently?</h4>
+            <p>India has about 11 million children living on the streets and 14 million children working as labours. Only 60% of children have access to education despite having a national policy on compulsory elementary education. The time to take collective as well as individual responsibility to remedy the current situation is here. Right now!</p>
+            <br>
+            <h4>2. Why do you stress on education, when there are other equally pressing issues in the country?</h4>
+            <p>Education alone has the power to liberate people from the vicious cycle of poverty - not only in terms of earning a livelihood but also in becoming aware of the rights and freedoms that a citizen is endowed with. Thus empowering individuals and making them self-sufficient.</p>
+            <br>
+            <h4>3. Where is Mission Education programme located?</h4>
+            <p>Mission Education is a national level programme of Smile Foundation with a presence across 120 communities in 21 states of India.</p>
+
+            <br>
+            <h4>4. What curriculum do you follow in the education programmes?</h4>
+            <p>Our educational programme - Mission Education, for underprivileged children, follows the curriculum of the respective state board where the project is present and operational.</p>
+            <br>
+            <h4>5. What information is sent to the donors?</h4>
+            <p>The donor gets an instant acknowledgement mail along with an SMS. On receiving the reconciliation statement from the bank, a receipt is sent via e-mail immediately, followed by a hard copy by post (within India). The receipt is accompanied by a 'welcome pack' which is also a token of appreciation. The donor receives a birthday wish, wishes on important festivals, programme updates and an annual impact report during a year's time.</p>
+            <br>
+            <h4>6. How does Smile Foundation ensure that the donor's contribution is being utilized in the intended way?</h4>
+            <p>Smile Foundation follows the principle of good governance. We have a four-tier audit mechanism to track and monitor the funds raised and utilized. More details of the process are mentioned at <a href="http://www.smilefoundationindia.org/governance.htm">http://www.smilefoundationindia.org/governance.htm</a> </p>
+            <br>
+            <h4>7. Is the website safe to make online payments?</h4>
+            <p>Yes, the website is safe for any kind of transaction. Also any information exchange is kept safe and in no condition gets disclosed. Also the payment gateway is a third party payment gateway recognized by the financial institutions under the government of India. So any transaction also is thoroughly secured.</p>
+            <br>
+            <h4>8. What is the process of keeping the donor's information safe?</h4>
+            <p>As a credible organization, we honour the privacy of our donors. The donor data is not exposed or shared with any external agency under any circumstances. We have a robust in-house mechanism and server system where the records are kept safe. The entire setup is protected with password and is guarded by surveillance software. The data is kept strictly confidential and only authorized staff with a special non-disclosure bond have access to it.</p>
+            <br>
+            <h4>9. What are the Tax benefits that a donor will get?</h4>
+            <p>A donor will get 50% of tax exemption on the donation under section 80 G of Income Tax Act, 1961.</p>
+            <br>
+            <h4>10. Do you issue Tax receipts? How soon will the receipts arrive?</h4>
+            <p>Yes, tax receipts are issued to all the donors irrespective of the amount supported. A digital copy of the receipt is generated on and sent via e-mail post realization of the donated amount. The hard copy of the receipt is delivered to the donor within 10 working days.</p>            
+            <br>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./smile_files/jquery.min.js.download"></script>
+    <script src="./smile_files/bootstrap.min.js.download"></script>
+    <!--Start of Tawk.to Script-->
+	<script src="./smile_files/app.js.download"></script>
+	<!--End of Tawk.to Script-->
+    <script type="text/javascript">
+      $(function(){ /* to make sure the script runs after page load */
+
+      $('.more').each(function(event){ /* select all divs with the item class */
+      
+        var max_length = 100; /* set the max content length before a read more link will be added */
+        
+        if($(this).html().length > max_length){ /* check for content length */
+          
+          var short_content   = $(this).html().substr(0,max_length); /* split the content in two parts */
+          var long_content  = $(this).html().substr(max_length);
+          
+          $(this).html(short_content+
+                 '<a href="#" class="read_more">...Read More</a>'+
+                 '<span class="more_text" style="display:none;">'+long_content+'</span>'); /* Alter the html to allow the read more functionality */
+                 
+          $(this).find('a.read_more').click(function(event){ /* find the a.read_more element within the new html and bind the following code to it */
+     
+            event.preventDefault(); /* prevent the a from changing the url */
+            $(this).hide(); /* hide the read more button */
+            $(this).parents('.item').find('.more_text').show(); /* show the .more_text span */
+         
+          });
+          
+        }
+        
+      });
+     
+     
+    });
+
+    $(function(){ /* to make sure the script runs after page load */
+
+      $('.story1').each(function(event){ /* select all divs with the item class */
+      
+        var max_length = 300; /* set the max content length before a read more link will be added */
+        
+        if($(this).html().length > max_length){ /* check for content length */
+          
+          var short_content   = $(this).html().substr(0,max_length); /* split the content in two parts */
+          var long_content  = $(this).html().substr(max_length);
+          
+          $(this).html(short_content+
+                 '<a href="#" class="read_more">...Read More</a>'+
+                 '<span class="more_text" style="display:none;">'+long_content+'</span>'); /* Alter the html to allow the read more functionality */
+                 
+          $(this).find('a.read_more').click(function(event){ /* find the a.read_more element within the new html and bind the following code to it */
+     
+            event.preventDefault(); /* prevent the a from changing the url */
+            $(this).hide(); /* hide the read more button */
+            $(this).parents('.item').find('.more_text').show(); /* show the .more_text span */
+         
+          });
+          
+        }
+        
+      });
+     
+     
+    });
+    </script>
+  
+</div><div id="JrSKP4W-1588095287692" class="" style="display: block !important;"><iframe id="dh6NeFa-1588095287694" src="./smile_files/saved_resource(2).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 280px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; display: none !important; height: 120px !important;"></iframe><iframe id="gY3O2AX-1588095287697" src="./smile_files/saved_resource(3).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; pointer-events: auto !important; height: 40px !important; min-height: 40px !important; max-height: 40px !important; width: 240px !important; min-width: 240px !important; max-width: 240px !important; border-radius: 0px !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center !important; margin: 0px !important; top: auto !important; bottom: 0px !important; right: 10px !important; left: auto !important; display: block !important;"></iframe><iframe id="jtEuLVV-1588095287697" src="./smile_files/saved_resource(4).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; display: none !important; z-index: 1000003 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; top: auto !important; bottom: 25px !important; right: 1px !important; left: auto !important; width: 21px !important; max-width: 21px !important; min-width: 21px !important; height: 21px !important; max-height: 21px !important; min-height: 21px !important;"></iframe><div class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="YbBLilj-1588095287692" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="g5PGAGp-1588095287692" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: e-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="CM5HKcG-1588095287692" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="lJBbu7d-1588095287692" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: s-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="vQcJn3F-1588095287693" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="DSe7MtJ-1588095287693" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: ne-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="O3RJxUs-1588095287693" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: 0px !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: sw-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><div id="XzwLLMU-1588095287694" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999999 !important; cursor: se-resize !important; float: none !important; border-radius: unset !important; pointer-events: auto !important;"></div><iframe id="S9II62N-1588095287763" src="./smile_files/saved_resource(5).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 378px !important; height: 562px !important; display: none !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; pointer-events: auto !important; bottom: 50px !important; top: auto !important; right: 10px !important; left: auto !important;"></iframe></div></body></html>

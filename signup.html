@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0 ;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://localhost:8181/">Logo</a>
+</div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="active"><a href="index.html">Home</a></li>
+
+</ul>
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+
+
+
+
+<hr>
+<p>
+<p> <p>
+<p>
+<hr>
+<p>
+<p> <p>
+<p>
+
+
+<h1>Signup</h1>
+
+
+
+
+
+
+<script>
+
+function   valid()
+{
+   if(f.username.value=="")
+  {
+      alert("enter username");
+    return;
+}
+if(f.password.value=="")
+ {
+     alert("enter password");
+     return;
+}
+if(f.password.value.length<5)
+{
+   alert("length must be 5");
+   return;
+}
+if(f.cpassword.value=="")
+{
+   alert("enter confirm password");
+   return;
+}
+if(f.password.value!=f.cpassword.value)
+{
+   alert("password  and  confirm must match");
+   return;
+}
+if(!f.type.selectedIndex)
+{
+  alert("Selct type");
+ return;
+}
+if(f.fullname.value=="")
+{
+   alert("enter fullname");
+ return;
+}
+if(f.dob.value=="")
+{
+   alert("enter Date");
+return;
+}
+if(!f.ques.selectedIndex)
+{
+  alert("select security question");
+  return;
+}
+if(f.answer.value=="")
+ {
+    alert("enter answer");
+  return;
+}
+if(f.email.value=="")
+{
+   alert("enter email");
+ return;
+}
+var n=f.email.value;
+s=n.indexOf("@");
+if(s==-1)
+{
+  alert("must include @");
+ return;
+}
+
+s=n.indexOf(".");
+if(s==-1)
+{
+  alert("enter email properly");
+  return;
+}
+if(f.address.value=="")
+{
+   alert("enter address");
+  return;
+}
+if(f.country.value=="")
+{
+   alert("enter  city");
+  return;
+}
+if(f.state.value=="")
+{
+   alert("enter  state");
+  return;
+}
+if(f.city.value=="")
+{
+   alert("enter city");
+return;
+}
+f.submit();
+}
+</script>
+
+
+<div class="panel panel-primary">
+
+<div class="panel-body">
+<div class="container">
+<div class="row">
+<form action="signup1.php"    name=f >
+<div class=form-group>
+<table style="color:#000;">
+<tr>
+<td>
+  Username <td><input type=text name="username"  size="15" class="form-control"/>
+<tr>
+<td>
+  Password <td><input type="password" name="password"  size="15" class="form-control"/>
+<tr>
+<td>
+  Confirm Password <td><input type=password name="cpassword"  size="15" class="form-control"/>
+ <tr>
+<td>  
+Type<td>
+   <select name="type" class="form-control" >
+<option></option>
+    <option>donator</option>
+	<option>guest</option>
+	</select>
+ <tr>
+<td>  
+ Name  <td><input type=text name="fullname"  size="25" class="form-control"/>
+<tr>
+<td>
+ Dob  <td><input type=text name="dob"  id=a  class="form-control" />
+<tr>
+<td>
+ Security Question
+ <td>
+   <select name="ques" class="form-control">
+   <option>Select Question</option>
+   <option>What is your lucky number</option>
+   <option>What is your favourite color</option>
+   <option>What is your nick name</option>
+   </select>
+<tr>
+<td>
+   Security Answer <td><input type=text name="answer" size="15" class="form-control"/>
+<tr>
+<td>
+   Email <td><input type=text  name="email" size="25" class="form-control"/>
+<tr>
+<td>
+    Address       <td>     <textarea name="address" rows="4" cols="20" class="form-control" >
+	                        </textarea>
+<tr>
+<td>	
+  Country <td><input type="text" name="country" class="form-control" />
+ <tr>
+<td>
+  State<td> <input type="text" name="state" class="form-control" />
+<tr>
+<td>
+  City <td><input type="text" name="city" class="form-control" />
+<tr>
+<td>
+   <input type="button" value="Submit" onClick="valid()" align="center" class="btn btn-success"/>
+    &nbsp;<input  type=reset  value="Reset" class="btn btn-warning">
+
+</form>
+</table>
+</div>
+</div>
+</div>
+</div>

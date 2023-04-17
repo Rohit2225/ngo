@@ -1,0 +1,122 @@
+.navbar{
+	margin-bottom: 30px;
+	}
+.story{
+	background-color: rgba(114, 191, 68, 0.87);
+	border: 1px solid #72bf44;
+	text-align: center;
+	padding-top: 8px;
+
+}
+.story .lead b{
+	color: #fff;
+}
+.story .lead a{
+   padding: 20px;
+}
+.story .lead{
+   margin-bottom: 8px;
+}
+.story-content{
+	border:dotted 1px black;
+	padding: 20px;
+	min-height: 490px;
+	margin-bottom: 30px;
+}
+.story-images{
+	text-align: center;
+}
+.head{
+	background-color: yellow;
+	color: black;
+	padding: 4px;
+}
+.head h4{
+	margin-top: 2px;
+	margin-bottom: 1px;
+	font-weight: 600;
+}
+.story-text{
+	margin-top: 5px;
+}
+.story-text p{
+	margin-bottom: 0px;
+	}
+.img-responsive{
+	width: 100%;
+}
+
+ /* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	h4{
+		font-size: 14px;
+	}
+  p {
+    color: #475055;
+    font-size: 8px;
+    margin-bottom: 6px;
+    line-height: 14px;
+  }
+  .story-content {
+    border: dotted 1px black;
+    padding: 2px;
+    min-height: 310px;
+    margin-bottom: 20px;
+	}
+
+}
+
+.tooltip-inner {
+    max-width: 400px;
+    /* If max-width does not work, try using width instead */
+    width: 400px; 
+	text-align:justify;
+
+}
+
+h4, .h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+h2 {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover, a:focus {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #333;
+}
+.nav-area p{  color: #475055;
+    font-size: 13px;
+    margin-bottom: 0px;
+    line-height: 1.5em;
+    padding-top: 8px;
+  }
+.hd_right ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+p {  
+    color: #475055;
+    font-size:14px;
+    margin-bottom: 14px;
+    line-height:20px;
+  }
+p {
+    display: block;
+	text-decoration: none;
+
+}
+
+
+
+
+/* CSS Document */
+
